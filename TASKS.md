@@ -27,14 +27,14 @@
 - Métricas: Ingestión de 100 lecturas en 1259 ms (~12.6 ms/lectura, p95 < 500 ms); deduplicación exacta al reenviar (100 filas intactas); publicación de eventos de dominio DeviceWentOffline y SensorFaulty validados contra schemas; enrutamiento a DLQ para mensajes malformados.
 - Bloqueos / notas: ninguno
 
-## Task 4 — API REST de telemetría   [ ] pendiente
+## Task 4 — API REST de telemetría   [x] hecha
 - Rama: feature/H3-telemetry-api
-- Paso actual: pendiente
-- Archivos tocados: -
-- Tests: pendiente
-- Último commit: -
-- Métricas: -
-- Bloqueos / notas: -
+- Paso actual: Completado
+- Archivos tocados: src/main/java/com/edifika/telemetry/domain/model/queries/..., src/main/java/com/edifika/telemetry/interfaces/rest/resources/..., src/main/java/com/edifika/telemetry/domain/services/TelemetryQueryService.java, src/main/java/com/edifika/telemetry/application/internal/queryservices/TelemetryQueryServiceImpl.java, src/main/java/com/edifika/telemetry/telemetry/interfaces/rest/..., src/main/java/com/edifika/telemetry/infrastructure/persistence/jpa/repositories/SensorReadingRepository.java, src/test/java/com/edifika/telemetry/domain/model/queries/GetReadingSeriesQueryTest.java, src/test/java/com/edifika/telemetry/interfaces/rest/TelemetryReadingControllerIT.java
+- Tests: .\mvnw.cmd -B verify -> PASS (14 tests run, 0 failures, 0 errors)
+- Último commit: feat(api): telemetry devices, latest, bucketed series and alerts (H3)
+- Métricas: Validación de rangos (raw 24h, 1m 7d, 1h 90d, from < to); agregación en SQL date_trunc (6 lecturas en 1 minuto agregadas a 1 punto); latest con preferencia por lecturas non-suspect; respuestas REST validadas 100% contra JSON schemas de contratos; acceso seguro para cualquier usuario autenticado (401 sin token, 200 con residente).
+- Bloqueos / notas: ninguno
 
 ## Task 5 — Cierre de H3   [ ] pendiente
 - Rama: feature/H3-docs
