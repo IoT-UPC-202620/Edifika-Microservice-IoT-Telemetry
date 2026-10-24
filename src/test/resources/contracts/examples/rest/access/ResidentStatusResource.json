@@ -1,0 +1,11 @@
+{
+  "userId": 15,
+  "buildingId": 12,
+  "unitIds": [
+    40
+  ],
+  "delinquent": true,
+  "overdueDebtCount": 2,
+  "checkedAt": "2026-10-23T15:00:00Z",
+  "lastError": null
+}

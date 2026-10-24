@@ -1,0 +1,17 @@
+{
+  "eventId": "6f1c2a9e0b7d4e1f9a3c5d7e8f901234",
+  "eventType": "CommandResult",
+  "eventVersion": 1,
+  "occurredAt": "2026-10-23T15:04:05Z",
+  "producer": "edge-gateway",
+  "buildingId": null,
+  "gatewayCode": "edge-gateway-01",
+  "correlationId": "5b0e0000000000000000000000000001",
+  "payload": {
+    "deviceId": "esp32-acc-01",
+    "commandId": "5b0e0000000000000000000000000001",
+    "type": "rgb",
+    "status": "OK",
+    "detail": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "deviceId": 3,
+  "deviceCode": "esp32-acc-01",
+  "gatewayCode": "edge-gateway-01",
+  "buildingId": 12,
+  "name": "Puerta piscina",
+  "deviceType": "DOOR",
+  "capabilities": [
+    "RFID",
+    "LOCK",
+    "RGB_LED",
+    "TEMPERATURE",
+    "HUMIDITY"
+  ],
+  "accessMode": "FREE_ACCESS",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 3,
+  "deviceCode": "esp32-acc-01",
+  "gatewayId": 1,
+  "gatewayCode": "edge-gateway-01",
+  "buildingId": 12,
+  "name": "Puerta piscina",
+  "location": "Piso 1",
+  "deviceType": "DOOR",
+  "capabilities": [
+    "RFID",
+    "LOCK",
+    "BUZZER",
+    "OLED",
+    "RGB_LED",
+    "TEMPERATURE",
+    "HUMIDITY"
+  ],
+  "accessMode": "RESERVED",
+  "activeReservationId": 7,
+  "ledColor": "#00FF88",
+  "unlockSeconds": 5,
+  "firmwareVersion": "door-1.2.0",
+  "status": "ACTIVE",
+  "lastSeenAt": "2026-10-23T15:00:00Z",
+  "createdAt": "2026-10-23T14:00:00Z"
+}

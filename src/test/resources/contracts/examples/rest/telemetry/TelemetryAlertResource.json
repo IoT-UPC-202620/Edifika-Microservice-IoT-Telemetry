@@ -1,0 +1,10 @@
+{
+  "id": 5,
+  "deviceCode": "esp32-acc-01",
+  "kind": "sensor_fault_temperature",
+  "state": "RAISED",
+  "details": {
+    "sensor": "temperature"
+  },
+  "occurredAt": "2026-10-23T15:04:05Z"
+}

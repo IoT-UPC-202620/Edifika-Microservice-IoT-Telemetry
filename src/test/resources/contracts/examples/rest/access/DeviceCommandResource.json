@@ -1,0 +1,14 @@
+{
+  "commandId": "5b0e0000000000000000000000000001",
+  "deviceId": 3,
+  "type": "SET_LED",
+  "params": {
+    "color": "#00FF88"
+  },
+  "status": "PENDING",
+  "detail": null,
+  "requestedBy": 15,
+  "requestedAt": "2026-10-23T15:00:00Z",
+  "expiresAt": "2026-10-23T15:00:10Z",
+  "resolvedAt": null
+}

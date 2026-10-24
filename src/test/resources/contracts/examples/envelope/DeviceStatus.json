@@ -1,0 +1,14 @@
+{
+  "eventId": "6f1c2a9e0b7d4e1f9a3c5d7e8f901234",
+  "eventType": "DeviceStatus",
+  "eventVersion": 1,
+  "occurredAt": "2026-10-23T15:04:05Z",
+  "producer": "edge-gateway",
+  "buildingId": null,
+  "gatewayCode": "edge-gateway-01",
+  "correlationId": null,
+  "payload": {
+    "deviceId": "esp32-acc-01",
+    "event": "online"
+  }
+}
