@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.Optional;
 @Repository
 public interface SensorReadingRepository extends JpaRepository<SensorReading, SensorReadingId> {
 
+    @Transactional
     @Modifying
     @Query(value = """
         INSERT INTO sensor_readings (device_code, captured_at, magnitude, value, unit, time_suspect, source_event_id, building_id)
@@ -33,6 +35,7 @@ public interface SensorReadingRepository extends JpaRepository<SensorReading, Se
             @Param("buildingId") Long buildingId
     );
 
+    @Transactional
     default int insertIgnoringDuplicates(SensorReading r) {
         return insertIgnoringDuplicatesNative(
                 r.getDeviceCode(),
@@ -56,5 +59,36 @@ public interface SensorReadingRepository extends JpaRepository<SensorReading, Se
 
     Optional<SensorReading> findFirstByDeviceCodeAndMagnitudeAndTimeSuspectFalseOrderByCapturedAtDesc(
             String deviceCode, Magnitude magnitude
+    );
+
+    interface BucketRow {
+        Instant getT();
+        Double getValue();
+        Double getMin();
+        Double getMax();
+        Long getCount();
+    }
+
+    @Query(value = """
+        SELECT date_trunc(:unit, captured_at) AS t,
+               avg(value) AS value,
+               min(value) AS min,
+               max(value) AS max,
+               count(*) AS count
+        FROM sensor_readings
+        WHERE device_code = :code
+          AND magnitude = :mag
+          AND captured_at >= :from
+          AND captured_at < :to
+        GROUP BY 1
+        ORDER BY 1 DESC
+        LIMIT 5000
+        """, nativeQuery = true)
+    List<BucketRow> aggregateReadings(
+            @Param("code") String deviceCode,
+            @Param("mag") String magnitude,
+            @Param("from") Instant from,
+            @Param("to") Instant to,
+            @Param("unit") String unit
     );
 }
