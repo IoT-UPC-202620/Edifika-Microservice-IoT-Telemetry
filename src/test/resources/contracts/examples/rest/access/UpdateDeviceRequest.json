@@ -1,0 +1,14 @@
+{
+  "name": "Puerta principal",
+  "location": "Piso 1 - Hall",
+  "capabilities": [
+    "RFID",
+    "LOCK",
+    "BUZZER",
+    "OLED",
+    "RGB_LED",
+    "TEMPERATURE",
+    "HUMIDITY"
+  ],
+  "unlockSeconds": 7
+}

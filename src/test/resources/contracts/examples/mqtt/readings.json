@@ -1,0 +1,8 @@
+{
+  "v": "1",
+  "ts": "2026-10-24T15:04:05Z",
+  "deviceId": "esp32-acc-01",
+  "sensor": "temperature",
+  "value": 24.5,
+  "unit": "°C"
+}

@@ -1,0 +1,10 @@
+{
+  "attemptId": 102,
+  "deviceId": 3,
+  "deviceCode": "esp32-acc-01",
+  "userId": null,
+  "rfidUidMasked": "****B2C3",
+  "accessMode": "FREE_ACCESS",
+  "reason": "DELINQUENT",
+  "occurredAt": "2026-10-23T15:04:05Z"
+}

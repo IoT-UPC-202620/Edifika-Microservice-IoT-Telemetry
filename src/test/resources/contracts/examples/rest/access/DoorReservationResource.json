@@ -1,0 +1,14 @@
+{
+  "id": 7,
+  "deviceId": 3,
+  "holderUserId": 15,
+  "startsAt": "2026-10-23T20:00:00Z",
+  "endsAt": "2026-10-23T22:00:00Z",
+  "status": "SCHEDULED",
+  "authorizedUserIds": [
+    16,
+    21
+  ],
+  "createdBy": 15,
+  "createdAt": "2026-10-23T14:00:00Z"
+}

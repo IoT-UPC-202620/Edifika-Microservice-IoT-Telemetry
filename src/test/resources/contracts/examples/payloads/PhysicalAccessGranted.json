@@ -1,0 +1,9 @@
+{
+  "attemptId": 101,
+  "deviceId": 3,
+  "deviceCode": "esp32-acc-01",
+  "userId": 15,
+  "credentialId": 9,
+  "accessMode": "RESERVED",
+  "occurredAt": "2026-10-23T15:04:05Z"
+}

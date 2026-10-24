@@ -1,0 +1,51 @@
+{
+  "version": 42,
+  "full": true,
+  "credentials": [
+    {
+      "uid": "04A1B2C3",
+      "type": "RFID",
+      "residentId": "15",
+      "residentName": "Ana Perez",
+      "status": "ACTIVE",
+      "validFrom": null,
+      "validUntil": null
+    }
+  ],
+  "devices": [
+    {
+      "deviceCode": "esp32-acc-01",
+      "name": "Puerta piscina",
+      "location": "Piso 1",
+      "capabilities": [
+        "RFID",
+        "LOCK",
+        "BUZZER",
+        "OLED",
+        "RGB_LED",
+        "TEMPERATURE",
+        "HUMIDITY"
+      ],
+      "ledColor": "#00FF88",
+      "status": "ACTIVE",
+      "settings": {}
+    }
+  ],
+  "removedDeviceCodes": [],
+  "reservations": [
+    {
+      "id": "7",
+      "deviceCode": "esp32-acc-01",
+      "holderResidentId": "15",
+      "startsAt": "2026-10-23T20:00:00Z",
+      "endsAt": "2026-10-23T22:00:00Z",
+      "authorizedResidentIds": [
+        "16",
+        "21"
+      ]
+    }
+  ],
+  "removedReservationIds": [],
+  "permissions": [],
+  "areaSchedules": []
+}

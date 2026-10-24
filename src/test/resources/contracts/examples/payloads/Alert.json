@@ -1,0 +1,6 @@
+{
+  "alert": "sensor_fault_temperature",
+  "state": "raised",
+  "deviceId": "esp32-acc-01",
+  "sensor": "temperature"
+}

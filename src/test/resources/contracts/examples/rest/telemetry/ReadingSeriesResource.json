@@ -1,0 +1,17 @@
+{
+  "deviceCode": "esp32-acc-01",
+  "magnitude": "TEMPERATURE",
+  "unit": "°C",
+  "bucket": "1m",
+  "from": "2026-10-23T14:00:00Z",
+  "to": "2026-10-23T15:00:00Z",
+  "points": [
+    {
+      "t": "2026-10-23T15:04:00Z",
+      "value": 24.4,
+      "min": 24.1,
+      "max": 24.6,
+      "count": 6
+    }
+  ]
+}

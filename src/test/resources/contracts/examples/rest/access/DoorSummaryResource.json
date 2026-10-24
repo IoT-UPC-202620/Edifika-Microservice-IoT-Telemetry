@@ -1,0 +1,19 @@
+{
+  "deviceId": 3,
+  "deviceCode": "esp32-acc-01",
+  "name": "Puerta piscina",
+  "location": "Piso 1",
+  "buildingId": 12,
+  "status": "ACTIVE",
+  "accessMode": "RESERVED",
+  "currentReservation": {
+    "id": 7,
+    "startsAt": "2026-10-23T20:00:00Z",
+    "endsAt": "2026-10-23T22:00:00Z",
+    "mine": true
+  },
+  "ledColor": "#00FF88",
+  "canEnter": true,
+  "canReserve": false,
+  "canChangeLed": true
+}

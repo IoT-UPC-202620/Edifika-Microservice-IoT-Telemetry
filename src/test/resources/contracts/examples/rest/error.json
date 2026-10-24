@@ -1,0 +1,6 @@
+{
+  "status": 409,
+  "error": "Conflict",
+  "message": "La puerta ya está reservada en ese horario",
+  "timestamp": "2026-10-23T15:04:05Z"
+}
