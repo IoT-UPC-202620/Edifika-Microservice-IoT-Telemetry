@@ -36,11 +36,11 @@
 - Métricas: Validación de rangos (raw 24h, 1m 7d, 1h 90d, from < to); agregación en SQL date_trunc (6 lecturas en 1 minuto agregadas a 1 punto); latest con preferencia por lecturas non-suspect; respuestas REST validadas 100% contra JSON schemas de contratos; acceso seguro para cualquier usuario autenticado (401 sin token, 200 con residente).
 - Bloqueos / notas: ninguno
 
-## Task 5 — Cierre de H3   [ ] pendiente
+## Task 5 — Cierre de H3   [x] hecha
 - Rama: feature/H3-docs
-- Paso actual: pendiente
-- Archivos tocados: -
-- Tests: pendiente
-- Último commit: -
-- Métricas: -
-- Bloqueos / notas: -
+- Paso actual: Completado
+- Archivos tocados: README.md, TASKS.md, Edifika-IoT-Platform/MILESTONES.md
+- Tests: .\mvnw.cmd -B verify -> PASS (14 tests run, 0 failures, 0 errors)
+- Último commit: docs: README and H3 milestone metrics (H3)
+- Métricas: Documentación completa de variables, colas, endpoints y tests; registro de métricas de H3 en Edifika-IoT-Platform/MILESTONES.md; suite de 14 tests 100% verde.
+- Bloqueos / notas: ninguno
