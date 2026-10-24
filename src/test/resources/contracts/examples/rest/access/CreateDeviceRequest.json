@@ -1,0 +1,17 @@
+{
+  "deviceCode": "esp32-acc-01",
+  "gatewayId": 1,
+  "name": "Puerta piscina",
+  "location": "Piso 1",
+  "deviceType": "DOOR",
+  "capabilities": [
+    "RFID",
+    "LOCK",
+    "BUZZER",
+    "OLED",
+    "RGB_LED",
+    "TEMPERATURE",
+    "HUMIDITY"
+  ],
+  "unlockSeconds": 5
+}

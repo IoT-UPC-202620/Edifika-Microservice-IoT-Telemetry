@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "commandId": "c0ffee00000000000000000000000001",
+  "type": "mode",
+  "params": {
+    "mode": "RESERVED",
+    "color": "#00FF88"
+  },
+  "ts": 1782000000
+}

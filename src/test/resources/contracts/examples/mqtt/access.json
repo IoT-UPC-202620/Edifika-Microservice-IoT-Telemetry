@@ -1,0 +1,7 @@
+{
+  "v": "1",
+  "ts": "2026-10-24T15:04:05Z",
+  "deviceId": "esp32-acc-01",
+  "credentialType": "RFID",
+  "credential": "04A1B2C3"
+}

@@ -1,0 +1,10 @@
+{
+  "deviceId": "esp32-acc-01",
+  "areaId": null,
+  "credential": "04A1B2C3",
+  "credentialType": "RFID",
+  "residentId": "15",
+  "result": "GRANTED",
+  "reason": "ok",
+  "accessMode": "FREE_ACCESS"
+}

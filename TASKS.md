@@ -18,14 +18,14 @@
 - Métricas: Hypertable sensor_readings particionada por captured_at; deduplicación ON CONFLICT (device_code, captured_at, magnitude) DO NOTHING; fallback limpio en Postgres sin extensión TimescaleDB.
 - Bloqueos / notas: ninguno
 
-## Task 3 — Consumidores (edge y registro de dispositivos)   [ ] pendiente
+## Task 3 — Consumidores (edge y registro de dispositivos)   [x] hecha
 - Rama: feature/H3-ingestion
-- Paso actual: pendiente
-- Archivos tocados: -
-- Tests: pendiente
-- Último commit: -
-- Métricas: -
-- Bloqueos / notas: -
+- Paso actual: Completado
+- Archivos tocados: pom.xml, src/main/java/com/edifika/telemetry/domain/services/..., src/main/java/com/edifika/telemetry/application/internal/commandservices/..., src/main/java/com/edifika/telemetry/application/internal/eventhandlers/..., src/main/java/com/edifika/telemetry/infrastructure/messaging/rabbitmq/..., src/main/java/com/edifika/telemetry/interfaces/messaging/..., src/test/java/com/edifika/telemetry/application/internal/commandservices/..., src/test/java/com/edifika/telemetry/interfaces/messaging/..., src/test/java/com/edifika/telemetry/support/ContractAssertions.java
+- Tests: .\mvnw.cmd -B verify -> PASS (8 tests run, 0 failures, 0 errors)
+- Último commit: feat(ingestion): idempotent readings, alerts, device status and registry projection (H3)
+- Métricas: Ingestión de 100 lecturas en 1259 ms (~12.6 ms/lectura, p95 < 500 ms); deduplicación exacta al reenviar (100 filas intactas); publicación de eventos de dominio DeviceWentOffline y SensorFaulty validados contra schemas; enrutamiento a DLQ para mensajes malformados.
+- Bloqueos / notas: ninguno
 
 ## Task 4 — API REST de telemetría   [ ] pendiente
 - Rama: feature/H3-telemetry-api

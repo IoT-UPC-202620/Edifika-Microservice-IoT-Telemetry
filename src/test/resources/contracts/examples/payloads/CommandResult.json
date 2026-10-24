@@ -1,0 +1,7 @@
+{
+  "deviceId": "esp32-acc-01",
+  "commandId": "5b0e0000000000000000000000000001",
+  "type": "rgb",
+  "status": "OK",
+  "detail": null
+}

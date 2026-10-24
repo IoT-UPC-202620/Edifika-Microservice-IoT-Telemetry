@@ -1,0 +1,9 @@
+{
+  "commandId": "5b0e0000000000000000000000000001",
+  "deviceCode": "esp32-acc-01",
+  "type": "rgb",
+  "params": {
+    "color": "#00FF88"
+  },
+  "expiresAt": "2026-10-23T15:04:15Z"
+}

@@ -1,0 +1,7 @@
+{
+  "deviceId": 3,
+  "deviceCode": "esp32-acc-01",
+  "from": "FREE_ACCESS",
+  "to": "RESERVED",
+  "reservationId": 7
+}

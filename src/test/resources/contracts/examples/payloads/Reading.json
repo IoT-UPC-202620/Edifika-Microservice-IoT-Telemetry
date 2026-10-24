@@ -1,0 +1,9 @@
+{
+  "deviceId": "esp32-acc-01",
+  "areaId": null,
+  "sensor": "temperature",
+  "value": 24.5,
+  "unit": "°C",
+  "capturedAt": "2026-10-23T15:04:00Z",
+  "timeSuspect": false
+}

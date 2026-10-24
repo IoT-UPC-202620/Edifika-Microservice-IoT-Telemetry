@@ -1,0 +1,13 @@
+{
+  "id": 101,
+  "deviceId": 3,
+  "deviceCode": "esp32-acc-01",
+  "userId": 15,
+  "credentialId": 9,
+  "rfidUidMasked": "****B2C3",
+  "accessMode": "FREE_ACCESS",
+  "result": "DENIED",
+  "reason": "DELINQUENT",
+  "occurredAt": "2026-10-23T15:04:05Z",
+  "receivedAt": "2026-10-23T15:04:06Z"
+}

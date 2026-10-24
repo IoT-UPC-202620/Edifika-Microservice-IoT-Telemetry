@@ -1,0 +1,22 @@
+{
+  "deviceCode": "esp32-acc-01",
+  "deviceId": 3,
+  "name": "Puerta piscina",
+  "buildingId": 12,
+  "connectionStatus": "ACTIVE",
+  "lastHeartbeatAt": "2026-10-23T15:00:00Z",
+  "latest": [
+    {
+      "magnitude": "TEMPERATURE",
+      "value": 24.5,
+      "unit": "°C",
+      "capturedAt": "2026-10-23T15:04:00Z"
+    },
+    {
+      "magnitude": "HUMIDITY",
+      "value": 61.0,
+      "unit": "%",
+      "capturedAt": "2026-10-23T15:04:00Z"
+    }
+  ]
+}

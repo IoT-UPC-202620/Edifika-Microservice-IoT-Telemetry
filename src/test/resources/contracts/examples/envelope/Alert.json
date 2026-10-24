@@ -1,0 +1,16 @@
+{
+  "eventId": "6f1c2a9e0b7d4e1f9a3c5d7e8f901234",
+  "eventType": "Alert",
+  "eventVersion": 1,
+  "occurredAt": "2026-10-23T15:04:05Z",
+  "producer": "edge-gateway",
+  "buildingId": null,
+  "gatewayCode": "edge-gateway-01",
+  "correlationId": null,
+  "payload": {
+    "alert": "sensor_fault_temperature",
+    "state": "raised",
+    "deviceId": "esp32-acc-01",
+    "sensor": "temperature"
+  }
+}

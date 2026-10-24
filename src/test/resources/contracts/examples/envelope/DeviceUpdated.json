@@ -1,0 +1,27 @@
+{
+  "eventId": "6f1c2a9e0b7d4e1f9a3c5d7e8f901234",
+  "eventType": "DeviceUpdated",
+  "eventVersion": 1,
+  "occurredAt": "2026-10-23T15:04:05Z",
+  "producer": "iot-access-management",
+  "buildingId": 12,
+  "gatewayCode": "edge-gateway-01",
+  "correlationId": null,
+  "payload": {
+    "deviceId": 3,
+    "deviceCode": "esp32-acc-01",
+    "gatewayCode": "edge-gateway-01",
+    "buildingId": 12,
+    "name": "Puerta piscina",
+    "deviceType": "DOOR",
+    "capabilities": [
+      "RFID",
+      "LOCK",
+      "RGB_LED",
+      "TEMPERATURE",
+      "HUMIDITY"
+    ],
+    "accessMode": "FREE_ACCESS",
+    "status": "ACTIVE"
+  }
+}
