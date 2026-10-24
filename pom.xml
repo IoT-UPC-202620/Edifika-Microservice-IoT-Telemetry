@@ -16,7 +16,7 @@
     </parent>
     <groupId>com.edifika</groupId>
     <artifactId>iot-telemetry</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
     <name>Edifika-Microservice-IoT-Telemetry</name>
     <description>Edifika-Microservice-IoT-Telemetry</description>
 
