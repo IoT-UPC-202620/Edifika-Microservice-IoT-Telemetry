@@ -147,6 +147,10 @@ public class TelemetryIngestionServiceImpl implements TelemetryIngestionService 
 
         TelemetryAlert alertEntity = new TelemetryAlert(deviceId, alert, stateUpper, detailsJson, env.occurredAt());
         telemetryAlertRepository.save(alertEntity);
+        if ("CLEARED".equals(stateUpper) && alert != null) {
+            // El edge avisa que la condicion termino: se cierran las RAISED abiertas del mismo tipo.
+            telemetryAlertRepository.resolveOpen(deviceId, alert, env.occurredAt());
+        }
 
         DeviceProjection projection = deviceProjectionRepository.findByDeviceCode(deviceId).orElse(null);
         Long buildingId = projection != null ? projection.getBuildingId() : env.buildingId();
@@ -203,6 +207,8 @@ public class TelemetryIngestionServiceImpl implements TelemetryIngestionService 
         if ("online".equalsIgnoreCase(event)) {
             projection.markOnline(env.occurredAt());
             deviceProjectionRepository.save(projection);
+            // Red de seguridad si el "cleared" del edge se perdio: volver a estar en linea cierra la alerta de conexion.
+            telemetryAlertRepository.resolveOpen(deviceId, "device_offline", env.occurredAt());
         } else if ("offline".equalsIgnoreCase(event)) {
             if (projection.getConnectionStatus() != ConnectionStatus.OFFLINE) {
                 projection.markOffline();
